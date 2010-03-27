@@ -26,3 +26,249 @@
   * Further minor improvements
   * Several minor fixes
   * Updating of languages 
+
+
+= 0.3.2, Jun 07, 2009= 
+  * Fixed: In the log entry 'New settings saved' the file name was missing.
+  * Changed: The API for the addon 'Random Picture' adapted ('remoteID', 'GALLERY_ID').
+  * Changed: The Tab Control in the admin area (Menu 'Setup') adapted for MSIE 8.
+  * New: In the view 'Table' (admin area) the number of pictures of each folder (incl. subfolders) is displayed.
+  * New: In the view 'Table' (admin area) all rebuild buttons are protected by a JavaScript dialog.
+  * Some minor fixes
+
+= 0.4.0 b2, May 03, 2009= 
+  * Fixed: The gallery view 'Thumbnails' was broken sometimes, since a function (mb_check_encoding) was called which is missing in PHP less than 4.4.3.
+  * Fixed: On uploading or importing pictures with PHP 5.1.2 or above, the function (imagepng) for creating thumbnails obtained an invalid parameter for the image compression.
+  * Changed: In the view 'Category' (Menu 'Setup', Option 'Display folders as categories') all pictures in the subfolders are counted now. Beforehand were considered maximally two levels only.
+  * Changed: The implementation of the HTML-Editor was improved in the admin area.
+  * Changed: Flowplayer updated to version 3.1.0
+  * New: Audio-Support of MP3-files by Flowplayer
+  * Some minor fixes
+
+= 0.3.1a, Apr. 26, 2009= 
+  * Fixed: The gallery view 'Thumbnails' was broken sometimes, since a function (mb_check_encoding) was called which is missing in PHP less than 4.4.3.
+  * Fixed: On uploading or importing pictures with PHP 5.1.2 or above, the function (imagepng) for creating thumbnails obtained an invalid parameter for the image compression.
+  * Changed: In the view 'Category' (Menu 'Setup', Option 'Display folders as categories') all pictures in the subfolders are counted now. Beforehand were considered maximally two levels only.
+  * Changed: The implementation of the HTML-Editor was improved in the admin area.
+  * Some minor fixes
+
+= 0.4.0 b1, Apr. 12, 2009= 
+  * New: Video support for MP4, MOV und FLV by the Flowplayer 3.0.7
+  * Changed: Online-Editor HTMLArea replaced by the FCKEditor 2.6.4
+
+= 0.3.1, Apr. 12, 2009= 
+  * Fixed: An empty gallery (without pictures) couldn't switch from Flatfile to MySQL.
+  * Fixed: In the flatfile mode not all pictures could be deleted. At least one picture had to stay in the gallery.
+  * Fixed: If still no folder were created, thus existing pictures were not displayed in the gallery!
+  * Fixed: If the comment counter was switched off and on as well as at the same time a comment was posted, thus the number of comments was not correctly determined.
+  * Fixed: During the processing of a date with the month in three characters, a function (stripos) missing in PHP 4.x was used.
+  * Fixed: In the Folder and Picture Editor the time statement 'PM' resp. 'p.m.' was ignored.
+  * Fixed: If in the dialogs 'Upload' or 'Import' the option 'Delete originals' was selected, nevertheless the size of the original picture was displayed instead of the smaller one.
+  * Changed: The display of 'mg2_log.txt' is completely filtered. Which means that all applicable characters are converted to HTML entities.
+  * Changed: If the file 'mg2_log.txt' is greater than 300 KByte, thus it will be no longer completely deleted, but the last 360 entries remain.
+  * Changed: Before thumbnails will be created or pictures rotated, first the required main memory is calculated.
+  * Changed: Now, thumbnails are created in the format of the original picture. This means that thumbs of PNG pictures are saved in the PNG format, thumbs of GIF pictures are saved in the GIF format and so on (before thumbnails were always saved in the JPEG format).
+  * Changed: Still existing links to MG2 (www.minigal.dk) were completely removed.
+  * Changed: In the file 'style.css' of all skins the selector 'table.category' is extended by 'text-align:left;'. Thus the justification in the view 'Category' is left also in MSIE 7.0 and Opera 9.0 or above.
+  * New: All Event Handlers will be removed from the comment entries, e.g. 'onMouseOver'.
+  * New: The intro text in the view 'Category' can be set global to 'Force align left' and 'Force justify' (Menu 'Setup', Section 'Folder content').
+  * New: In the Menu 'Setup | Server' the size and access permissions of important gallery files will be displayed.
+  * A lot of minor fixes
+  * Updating of languages
+
+= 0.3.0 final, Oct. 31, 2008= 
+  * New: In the admin login the cursor is set in the password field by JavaScript.
+  * Some minor fixes
+
+= 0.2.4, Oct. 29, 2008= 
+  * Fixed: Bug introduced with kh_mod version 0.2.3: Items will be sorted according to their ID, not to their name, although the sorting mode is selected 'Name'.
+  * Fixed: The import of MG2 0.5.0/0.5.1 image data mixed thumbnail height with timestamp.
+  * New: In the admin login the cursor will set in the password field by JavaScript.
+  * Some minor fixes
+
+= 0.3.0 rc2, Oct. 04, 2008= 
+  * Fixed: The import of MG2 0.5.0/0.5.1 image data mixed thumbnail height with timestamp.
+  * Changed: Updating file 'password.php' in all skins
+  * Some minor fixes and improvements
+  * Updating of languages
+
+= 0.3.0 rc1, Aug. 15, 2008= 
+  * Fixed: Bug introduced with kh_mod version 0.3.0 b5 resp. 0.2.3: Items will be sorted according to their ID, not to their name, although the sorting mode is selected 'Name'.
+  * New: SEO-Links, e.g. 'image180.html' (optional)
+  * New: Admin mode for gallery. This will automatically be activated, if you call the gallery via admin area. In admin mode, counters will be locked and passwords will not be checked for protected folders.
+  * New: Time format selectable, e.g. Hour:Minute AM/PM
+  * Changed: The captcha addon works also without Freetype support.
+  * Some minor fixes and improvements
+  * Updating of languages
+
+= 0.3.0 b6, Jun. 06, 2008= 
+  * New: HTTP Header inserted in 'index.php' and 'admin.php' for included JavaScript.
+  * New: HTTP Header inserted in 'index.php' and 'admin.php' for included CSS.
+  * New: HTTP-Header 'X-Robots-Tag' selectable in the admin area.
+  * New: HTML-Metatags 'noarchive' and 'nosnippet' selectable in the admin area.
+  * New: Comments can be verified by captcha, white- and blacklist (Menu 'Setup/Comments').
+  * New: The comment form can be hidden in the image view (Menu Setup/Comments).
+  * New: Restore module (Menu 'Setup/Database')
+  * New: Backup files deletable in the admin area (Menu 'Setup/Database').
+  * New: Counter management with MySQL support (optional).
+  * New: The web server can be set on the character set of the language file (Menu 'Setup/Advanced').
+  * New: Language file splitted in 'xx_XX.admin.php' and 'xx_XX.gallery.php'.
+  * New: Gallery View 'Categories' for folder in all skins (optional).
+  * New: 'Latest image' as folder icon selectable (Folder Editor).
+  * New: Automatic setting of new folder positions (Folder Editor).
+  * New: Tooltips for thumbnails in the gallery (optional)
+  * Changed: Skins were completely revised.
+  * Changed: Improved Exif data display
+  * Some minor fixes and improvements
+  * Updating of languages
+
+
+= 0.2.3, May 16, 2008= 
+  * Fixed: In the skins 'rounded' and 'framed' didn't display the file 'thumbs.php', if comments are present.
+  * New: HTTP Header inserted in 'index.php' und 'admin.php' for included JavaScript
+  * New: HTTP Header inserted in 'index.php' und 'admin.php' for included CSS
+  * New: 12 new date formats
+  * Changed: Improved Exif data display
+  * Changed: Improved MSIE 7/Vista compatibility
+  * Some minor fixes and improvements
+
+= 0.3.0 b5, Apr. 15, 2008= 
+  * New: The programming of click and comment counter was redesigned and the file format adapted to MG2.
+  * New: Backup module (Menu 'Setup/Database')
+  * New: Image sorting by drag 'n' drop completely integrates (Folder Editor, button beside 'Position').
+  * New: 12 new date formats
+  * Changed: MySQL support improvements
+  * Changed: Improved MSIE 7/Vista compatibility
+  * Some minor fixes and improvements
+  * Updating of languages
+
+= 0.3.0 b4, Mar. 03, 2008= 
+  * New: Click and comment counter was integrated into the gallery.
+  * New: Display of the file name changeable (upper and lower case, with and without extension).
+  * Changed: MySQL support revised.
+  * Some minor fixes and improvements
+
+= 0.2.2, Dec. 31, 2007= 
+  * Fixed: Error in calculation of image size corrected.
+  * Changed: The update function 'check_new_version' removed for MG2.
+  * Changed: Function to create thumbnails and mediums optimized.
+  * Some minor fixes and improvements
+
+= 0.3.0 b3, Dec. 31, 2007= 
+  * Changed: The update function 'check_new_version' removed for MG2.
+  * New: Directory structure of the server importable (Menu 'importing').
+  * New: Extended options for the selection of folder icons (Folder Editor).
+  * New: Number of columns and rows can be set different for each folder.
+  * New: Behavior with mouse-click on image in the menu 'setup' selectable
+('With mouse-click on image go to').
+  * New: Images can be protected by transparent GIF.
+  * New: File name can be displayed as image headline (Menu 'Setup').
+  * New: Image headline as 'alt' attribute usable (Menu 'Setup').
+  * Some minor fixes and improvements
+
+= 0.3.0 b2a, Nov. 09, 2007= 
+  * Changed: The update function 'check_new_version' deactivated for MG2.
+  * Some minor fixes and improvements
+
+= 0.3.0 b2, Oct. 31, 2007= 
+  * New: MySQL support (experimental)
+  * New: New comments become locked (optional)
+  * New: The email addresses in comments can be hidden for the gallery
+  * New: Comments can be locked and unlocked, resp. (Picture Editor)
+  * Some minor fixes and improvements
+
+= 0.3.0 b1, July 8, 2007= 
+  * New: Image sorting by drag 'n' drop (Folder Editor, button beside 'Position').
+  * New: Random icons for folders can be also created from contained subfolders (Folder Editor).
+  * New: Extended upload options (Menu 'Upload'), e.g. target directory on web server.
+  * New: Extended import options (Menu 'Import').
+  * New: Display of important web server settings (Menu 'Setup/Server').
+  * New: Further setting options designated in the 'Setup' menu.
+
+= 0.2.1, May 19, 2007= 
+  * Changed: There are new parameters for the call of pictures 'iID' and folders 'fID' in version 0.2.0. Thus old links were no longer valid to pictures and folders. In 0.2.1 both the new and the old parameters 'id' and 'list' can be used.
+  * Fixed: The setting HTML Metatag 'robots' in the admin area didn't run correctly
+  * Fixed: Incompatibility to PHP5 in 'mg2_functions.php'.
+  * Fixed: Display error with Opera 9.20 in 'viewimage_exif.php' for all skins.
+
+= 0.2.0 final, Apr. 30, 2007= 
+  * New: Entry 'Photographer' in the Picture Editor.
+  * New: Gallery title, folder name, file name and Image title can be used for the meta tag 'title'.
+  * New: Meta tag 'robots' selectable by admin inteface.
+  * New: Extended Exif display, all values can be switched off one by one.
+  * New: Improved the calculation of the Exif value 'Exposure time' for cellphone cams.
+  * New: Thumbnail bar for image navigation (optional).
+  * New: Logging of IP and host with comment entries (optional).
+  * New: 'data' directory for database and log files.
+  * Some minor fixes and improvements
+  * Adaption of standard skins
+  * Updating of languages
+
+= 0.2.0 b1, Feb. 28, 2007= 
+  * New: Overwrite existing images by web interface (menu 'Upload').
+  * New: Support of subfolders for pictures.
+  * New: The data base works now with associative arraies, so that the indices of the pictures and folders are identical to the respective array index.
+
+= 0.1.0 pl1, Jan. 25, 2007= 
+  * Fixed: Access to Admin area without password.
+  * New: Displaying the number of comments per picture in the table view (Admin).
+
+= 0.1.0 final, Dec. 24, 2006= 
+  * Fixed: 'exif.php' revised, 'ExposureTime', 'ShutterSpeed', 'Flash', 'ApertureWidth' and 'MaxApertureWidth' supply now correct values.
+  * Fixed: The format of date '%Y%m%d' could not be recognized by JS Calendar, e.g. the calendar indicated to NaN at '20050830, 20:35' everywhere.
+  * Fixed: Empties bold tags into 'viewimage_begin.php' line 13 against CSS exchanged.
+  * Changed: XML attribute added to all <html> tags.
+  * Changed: Unnecessary program code removes, 'dec2frac()' and 'getlanguages()' from 'mg2_function.php'
+  * Changed: If the entered date isn't recognized (in the picture or folder editor), the stored date is no longer changed to the current date.
+  * New: Click counter basic functions integrates in 'mg2_function.php' for the counter addon.
+  * New: Language selection in the gallery now also possible by $_GET, e.g. &ln=en (ISO 639-1). The language selection is saved in the session variable '$selectlang'.
+  * New: Variable '$mg2->modversion' defines for the version of kh_mod.
+  * New: The eMail address in the admin setup is verified now by PHP.
+  * New: Format of date '%e/%m %Y' added, e.g. 3/11 2008
+  * New: 'lang' directory protected by '.htaccess'
+  * Some minor fixes and improvements
+  * Updated languages
+
+= 0.1.0 b3, Nov. 28, 2006= 
+  * Fixed: Except the root folder no other folder could be opened (only with the update).
+  * Fixed: In each case the first comment of a picture was sent as email to the Admin.
+  * Fixed: The name of root folder was set automatically, if it did not exist.
+  * Fixed: Sometimes problems with the recognition of the language files, during the installation of full version.
+  * Fixed: Thumbnails within the admin area have displayed sometimes the date of the previous picture.
+  * Fixed: HTMLArea text formatting error eliminates.
+  * Changed: Comment delete function protected against inadvertent deletion by 'Reload Button'.
+  * Changed: Date functions revises, changed over from 'date()' to 'strftime()' and date locates.
+  * Changed: 'viewimage_comment.php' adapted to new format of date.
+  * Changed: For Exif 'Original' date now 'DTOpticalCapture' is used instead 'DateTime'.
+  * Changed: The value of the HTTP charset header is determined now by the loaded language file.
+  * Changed: Special characters for the verification of inputs are now in the language files.
+  * Changed: The output buffer of status messages for rebuilding thumbs, is now switched off.
+  * Changed: HTMLArea file 'htmlarea.js' was compressed.
+  * Changed: 'admin.css' with the Font 'Helvetica' supplements.
+  * New: Calendar Theme 'calendar_mg2.css'
+  * New: 'includes' folder protected by '.htaccess'
+  * New: Workaround by 'touch()' for the function 'imagejpeg()' inserted, for 'safe mode' only.
+  * New: If active skin is no longer present, now an error message is indicated after login.
+  * Some minor fixes and improvements
+  * Updated languages
+
+= 0.1.0 b2, Nov. 04, 2006= 
+  * Folders are sortable according to different criteria.
+  * Numbers for folders and pictures as sorting criterion.
+  * Folders and individual pictures can be locked.
+  * Folders and pictures can be published automatically on a determinate date.
+  * Displaying file names under the thumbnails (optional).
+  * Thumbnails size in the admin area adjustable.
+  * All thumbnails of a folder can be generated at one go.
+  * Arbitrary name for the root folder selectable.
+  * With the picture upload and import, the target folder is freely selectable.
+  * The passwort protection of folders is applying to subfolders, too (optional).
+  * Comments are editable now in the admin area.
+  * Comment files will be deleted from the admin area, if no entry is more contained there.
+  * Comments can be verified by JavaScript (optional).
+  * Form verification for comments by PHP, in especially to a formally correct email address.
+  * Contents of incorrect forms for comments are repeated indicated.
+  * Comments de- and ascending sortable.
+  * Rotation of GIF pictures (if by the installed GD version supports).
+  * Tooltips for mini thumbs available (admin area).
+  * All JavaScript functions (HTMLArea, Tooltips etc.) can be switched off one by one. 
