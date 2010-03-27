@@ -217,7 +217,7 @@
   * Fixed: 'exif.php' revised, 'ExposureTime', 'ShutterSpeed', 'Flash', 'ApertureWidth' and 'MaxApertureWidth' supply now correct values.
   * Fixed: The format of date '%Y%m%d' could not be recognized by JS Calendar, e.g. the calendar indicated to NaN at '20050830, 20:35' everywhere.
   * Fixed: Empties bold tags into 'viewimage_begin.php' line 13 against CSS exchanged.
-  * Changed: XML attribute added to all <html> tags.
+  * Changed: XML attribute added to all html tags.
   * Changed: Unnecessary program code removes, 'dec2frac()' and 'getlanguages()' from 'mg2_function.php'
   * Changed: If the entered date isn't recognized (in the picture or folder editor), the stored date is no longer changed to the current date.
   * New: Click counter basic functions integrates in 'mg2_function.php' for the counter addon.
