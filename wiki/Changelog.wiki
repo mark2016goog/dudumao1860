@@ -9,3 +9,20 @@
   * Changed: The Exif module was revised.
   * Further minor improvements
   * Several minor fixes 
+
+
+= 0.4.0 b3, Jan 15, 2010 =
+
+  * New: Splash-Images for video and sound content. 
+  * New: Key word support for pictures, videos etc. (experimental)
+  * Update: Flowplayer to version 3.1.5
+  * Update: Prototype to version 1.6.1
+  * Update: Scriptaculous to version 1.8.3
+  * Update: FCKEditor to version 2.6.5
+  * Update: WZ Tooltips to version 5.3.1
+  * Changed: The data structure of the MySQL table 'idatabase'.
+  * Changed: The comment functions were concluded as module in an apart class/file.
+  * Changed: The Exif module was revised.
+  * Further minor improvements
+  * Several minor fixes
+  * Updating of languages 
