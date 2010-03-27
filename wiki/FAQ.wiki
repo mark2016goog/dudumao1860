@@ -1,20 +1,20 @@
 #labels Featured
-  # = How can you hidden a folder or image for users?= 
+  = How can you hidden a folder or image for users?= 
 Dies ist im Ordner- bzw. Bildeditor möglich, indem man dort einen negativen Wert f�r 'Position' einträgt. Das ein Bild oder Ordner gesperrt ist, wird in der Listenansicht durch einen roten Hintergrund gekennzeichnet.
  
-  # = How can you display a folder or image on a determinate date?=
+  = How can you display a folder or image on a determinate date?=
 Auch dies ist im Ordner- bzw. Bildeditor möglich, unter der Option 'Anzeige ab' kann ein entsprechendes Datum eingetragen werden. Das ein Bild oder Ordner erst später angezeigt wird, wird in der Listenansicht durch einen gelben Hintergrund gekennzeichnet.
  
-  # = Does the hidden of the folders apply also to contained sub folders?=
+  = Does the hidden of the folders apply also to contained sub folders?=
 Yes, it do.
  
-  # = Does the password protection of a folder apply also to the contained sub folders?=
+  = Does the password protection of a folder apply also to the contained sub folders?=
 Ja, wenn unter den Einstellungen die Option 'Passwortabfrage von Ordnern rekursiv (Nutzer)' gew�hlt wurde!
  
-  # = Although the sorting is set on 'date' in the folder editor, all folders are sorted by their names!=
+  = Although the sorting is set on 'date' in the folder editor, all folders are sorted by their names!=
 Dies liegt daran, dass in den Einstellungen unter der Option 'Alle Ordner sortieren nach' der Eintrag 'Name' ausgew�hlt ist. Mit der Auswahl 'Ordnereinstellung' erfolgt die Sortierung entsprechend der Ordnereinstellung.
  
-  # = After the update on kh_mod the descriptions of pictures are displayed without blank line directly under the picture!=
+  = After the update on kh_mod the descriptions of pictures are displayed without blank line directly under the picture!=
 Um die Anordnung der Bildbeschreibung zu ändern, kann im Ordner /skins/.../templates der Bildgalerie die Datei viewimage_begin.php entsprechend editiert werden. Um z.B. eine Leerzeile zwischen allen Bildern und deren Beschreibung zu erhalten, f�gt man vor:
 
 <div align="center">
@@ -29,7 +29,7 @@ einen Zeilenumbruch ein:
 </div>
 
  
-  # = I forgot my password, how can I get access to the admin area again?=
+  = I forgot my password, how can I get access to the admin area again?=
 Hier gibt es zwei Möglichkeiten:
 
 1) Fügen Sie in der Datei mg2_settings.php bzw. data/mg2db_settings.php auf Ihrem Server folgende Zeile als vorletzte ein.
@@ -41,17 +41,17 @@ Nun können Sie sich mit dem Passwort 1234 wieder einloggen und im Setup ein neu
 2) Löschen Sie die Datei mg2_settings.php bzw. data/mg2db_settings.php von Ihrem Server. Dadurch sollte beim Aufruf der Galerie automatisch das Installationssetup (mg2_install.php) aufgerufen werde. Hier können Sie ein neues Passwort vergeben. Bei dieser Methode gehen aber alle Einstellungen für die Galerie verloren.
 
  
-  # = No short comments can be posted, an error message is always displayed.=
+  = No short comments can be posted, an error message is always displayed.=
 Die Ursache hierfür liegt bei der JavaScript-Verifizierung in der Datei 'mg2_jsformvalid.php' Zeile 9:
 
-  # = objForm.input.regexp   = /([-\üöäßÄÖÜ]{3,12}[\s\?\.,;:!]+){2,}/;=
+  = objForm.input.regexp   = /([-\üöäßÄÖÜ]{3,12}[\s\?\.,;:!]+){2,}/;=
 
 Hierdurch werden mindestens zwei Wörter mit je drei Buchstaben und einem Satzzeichen als gültige Eingabe verlangt. Sie können die Zeile ganz löschen oder die Anforderung z.B. auf ein Wort mit Satzzeichen verringern:
 
-  # = objForm.input.regexp   = /([-\üöäßÄÖÜ]{3,12}[\s\?\.,;:!]+){1,}/;=
+  = objForm.input.regexp   = /([-\üöäßÄÖÜ]{3,12}[\s\?\.,;:!]+){1,}/;=
 
  
-  # = No comments with special characters can be posted.=
+  = No comments with special characters can be posted.=
 Das kann daran liegen, dass die Zeichencodierung von Dateien geändert wurde. Dies kann sowohl beim Speichern mit einem Editer, der den verwendeten Zeichensatz nicht unterstützt, geschehen. Aber auch durch den Webserver oder das FTP-Programm.
 
 Zur Kontrolle laden Sie die beiden Dateien 'mg2_functions.php' und 'mg2_jsformvalid.php' auf Ihren lokalen Rechner. Öffnen Sie die Dateien mit einem Editor, der zumindest utf-8 und ISO 8859-1 unterst�tzt, z.B. Notepad++ In 'mg2_functions.php' muss die Zeile 669 wie folgt aussehen:
@@ -61,12 +61,8 @@ Zur Kontrolle laden Sie die beiden Dateien 'mg2_functions.php' und 'mg2_jsformva
 
 In 'mg2_jsformvalid.php' sind es die Zeilen 9 und 14:
 
-  # = objForm.input.regexp   = /([-\wüöäßÄÖÜ]{3,12}[\s\?\.,;:!]+){2,}/;=
+  = objForm.input.regexp   = /([-\wüöäßÄÖÜ]{3,12}[\s\?\.,;:!]+){2,}/;=
 
-  # = objForm.name.regexp   = /^[\s\w\.,;üöäßÄÖÜ]{2,90}$/;=
+  = objForm.name.regexp   = /^[\s\w\.,;üöäßÄÖÜ]{2,90}$/;=
 
 Sollten dort keine Umlaute, sondern irgendwelche kryptischen Zeichen stehen, so korrigieren Sie die Zeilen entsprechend. Speichern Sie dann die Dateien und kopieren Sie sie wieder auf Ihren Webserver.
-
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
