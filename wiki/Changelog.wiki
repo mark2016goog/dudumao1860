@@ -1,3 +1,4 @@
+#labels Featured
 = 0.3.3, Jan 15, 2010 =
 
   * New: In the admin area (table view), there are also tooltips available for folders with thumbnails.
