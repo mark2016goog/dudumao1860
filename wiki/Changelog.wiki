@@ -1,4 +1,34 @@
 #labels Featured
+= kh_mod 0.4.0 b4, 16.12.2010 =
+
+  *  皮肤全面修复
+  *  缩略图排列增加自动、居中、自适应属性值
+  *  包含空子相册的相册也可以被删除
+  *  相册支持拖拽分类
+  *  画廊支持关键词
+  *  数据表增加keywords和item_keyword字段
+  *  FCKeditor编辑器版本升级至2.6.6
+  *  Flowplayer播放器版本升级至3.2.5
+  *  Colorbox弹窗特效1.3.15支持全尺寸查看图像
+  *  如果一个重要的进程超时中断，可以通过刷新浏览器继续
+  *  考虑到可用存储的测定，PHP环境的全局设置，例如作为htaccess文件 
+  *  缩略图显示增加URL编码
+  *  在安装和相册中增加HTTP-Header 'X-Frame-Options: SAMEORIGIN'
+  *  在更新和管理中增加HTTP-Header 'X-Frame-Options: DENY'
+  *  安装过程中, 最重要的文件通过SHA1验证
+  *  管理密码加密把MD5改为SHA1 (incl. salt)
+  *  '/skins/_global_'目录被重命名为'addons'并移动至相册根目录
+  *  mg2db_fdatabase.php被重名为mg2db_folders.php
+  *  mg2db_idatabase.php被重名为mg2db_items.php
+  *  mg2db_fdatabase数据库表名重命名为mg2db_folders
+  *  mg2db_idatabase数据库表名重命名为mg2db_items
+  *  备份文件被移动到'/data/backup'目录下
+  *  高级选项增加“重建修复”功能
+  *  幻灯显示增加暂停功能
+  *  一些小的改进
+  *  一些小的修复 
+  *  更新语言文件
+
 = 0.3.3, Jan 15, 2010 =
 
   * New: In the admin area (table view), there are also tooltips available for folders with thumbnails.
