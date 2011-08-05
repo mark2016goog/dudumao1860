@@ -1,0 +1,28 @@
+#summary One-sentence summary of this page.
+#labels Featured,Phase-Deploy
+
+= 安装kh_mod 0.4.0 b4 =
+
+　# 使用一个FTP程序(例如WS_FTP Lite)在你的Web服务器上创建一个新的目录, 例如: http://www.yourdomain.com/gallery
+
+　# 上传kh_mod_04_b4.zip压缩包中的所有文件(包括子文件) 至你的Web服务器上新创建的目录.
+
+　# 使用FTP设置'data'文件夹和'pictures'文件夹的权限为777.
+
+　# 点击打开你的浏览器，例如打开: http://www.yourdomain.com/gallery/
+
+　# 按照向导安装.
+
+　# 最后，你可以从http://www.tangata.de/kh_mod/files/final04/kh_mod_04_b4_skins.zip安装更多皮肤
+   
+   皮肤支持MG2 0.5.1或者kh_mod < 0.4.0 b4，但不兼容kh_mod 0.4.0 b4!
+
+　# Enjoy with kh_mod 0.4.0 b4
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
