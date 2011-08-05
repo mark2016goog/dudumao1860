@@ -11,7 +11,7 @@
 
 　　5) 按照向导安装.
 
-　　6) 最后，你可以从http://www.tangata.de/kh_mod/files/final04/kh_mod_04_b4_skins.zip安装更多皮肤
+　　6) 最后，你可以从http://www.tangata.de/kh_mod/files/final04/kh_mod_04_b4_skins.zip，安装更多皮肤
    
    皮肤支持MG2 0.5.1或者kh_mod < 0.4.0 b4，但不兼容kh_mod 0.4.0 b4!
 
@@ -39,7 +39,7 @@
 
 　　5) 然后在浏览器地址栏中输入:http://www.yourdomain.com/gallery/mg2_update.php，升级至kh_mod 0.4.0 b4
 
-　　6) 最后，你可以从http://www.tangata.de/kh_mod/files/final04/kh_mod_04_b4_skins.zip安装更多皮肤
+　　6) 最后，你可以从http://www.tangata.de/kh_mod/files/final04/kh_mod_04_b4_skins.zip，安装更多皮肤
 
    皮肤支持MG2 0.5.1或者kh_mod < 0.4.0 b4，但不兼容kh_mod 0.4.0 b4!
 
