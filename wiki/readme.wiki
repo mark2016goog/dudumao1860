@@ -1,6 +1,4 @@
-#summary One-sentence summary of this page.
 #labels Featured,Phase-Deploy
-
 = 安装kh_mod 0.4.0 b4 =
 
 　# 使用一个FTP程序(例如WS_FTP Lite)在你的Web服务器上创建一个新的目录, 例如: http://www.yourdomain.com/gallery
