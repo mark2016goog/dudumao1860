@@ -48,11 +48,11 @@
 
 = MySQL支持 (可选) =
 
-　　* MySQL仍处于试验阶段. 为了使用MySQL，根据MySQL服务器配置'mg2admin_sqlstart.php'. 
+　　MySQL仍处于试验阶段. 为了使用MySQL，根据MySQL服务器配置'mg2admin_sqlstart.php'. 
 
-　　* 然后,你必须在菜单'选项 | 数据库'的'切换数据库'选择MySQL. 
+　　然后,你必须在菜单'选项 | 数据库'的'切换数据库'选择MySQL. 
 
-　　* 如果提示'成功切换至MySQL',在你的MySQL数据库里会创建一些新的包含相应数据记录的数据表:
+　　如果提示'成功切换至MySQL',在你的MySQL数据库里会创建一些新的包含相应数据记录的数据表:
 
 - mg2db_folders
 - mg2db_items
