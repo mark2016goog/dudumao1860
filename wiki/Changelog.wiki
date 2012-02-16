@@ -8,7 +8,7 @@
   *  其它一些小的修复
   *  更新语言包
 
-kh_mod 0.4.0 rc2, 07.01.2012=
+=kh_mod 0.4.0 rc2, 07.01.2012=
   *  修正: 在Flat file模式下归档文件不能被创建
   *  统计分析中的设置永久保存
   *  在MySQL数据库的mg2db_chronicle表中增加statisticsets字段
@@ -16,7 +16,21 @@ kh_mod 0.4.0 rc2, 07.01.2012=
   *  Prototype更新至version 1.7.0
   *  Scriptaculous更新至version 1.9.0
   *  方便改变画廊相册的语言情况下有必要使用全名
-  *  其它一些小的修复 
+  *  其它一些小的修复
+
+=kh_mod 0.4.0 rc1, 21.12.2011=
+
+  *  皮肤进一步改进
+  *  管理面板增加关键词项
+  *  管理面板增加书签图片
+  *  增加统计分析
+  *  MySQL数据库增加mg2db_chronicle表
+  *  Flowplayer更新至version 3.2.7
+  *  Colorbox更新至version 1.3.17.1
+  *  Download function was added
+  *  其他一些小的改进
+  *  其它一些小的修复
+  *  更新语言包 
 
 = 0.4.0 b4, 16.12.2010 =
 
