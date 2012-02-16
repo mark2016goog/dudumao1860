@@ -1,5 +1,5 @@
 #labels Featured,Phase-Deploy
-= 安装kh_mod 0.4.0 b4 =
+== 安装kh_mod ==
 
 　　1) 使用一个FTP程序(例如WS_FTP Lite)在你的Web服务器上创建一个新的目录, 例如: http://www.yourdomain.com/gallery
 
@@ -11,14 +11,13 @@
 
 　　5) 按照向导安装.
 
-　　6) 最后，你可以从http://www.tangata.de/kh_mod/files/final04/kh_mod_04_b4_skins.zip，安装更多皮肤
-   
-   皮肤支持MG2 0.5.1或者kh_mod < 0.4.0 b4，但不兼容kh_mod 0.4.0 b4!
+　　6) 最后，你可以从http://www.tangata.de/kh_mod/获取更多皮肤，存在版本兼容问题
 
-　　7) Enjoy with kh_mod 0.4.0 b4
+　　7) Enjoy with kh_mod
 
+----------------------------------------------------------------------------------
 
-= 升级MG2/kh_mod至kh_mod 0.4.0 b4 =
+== 升级MG2/kh_mod ==
 
 　　1) 首先，你应该在管理面板，使用页面下面的“备份数据库”链接保存数据库文件，使用“备份数据库”(在kh_mod 0.3.0或以上版本使用选择'备份当前数据库'，在菜单: 程序 | 设置).
 
@@ -26,40 +25,39 @@
 
 　　3) 然后删除相册所有的文件和目录，以下文件除外:
 
-   - 图像目录 'pictures'
-   - 插件目录 'skins/_global_'        (如果存在)
-   - 数据库目录  'data'               (如果存在)
-   - 文件: mg2_settings.php           (如果)
-   - 文件: mg2db_fdatabase.php
-   - 文件: mg2db_idatabase.php
-   - 文件: mg2_log.txt
-   - 文件: database.txt               (如果存在)
+- 图像目录 'pictures' - 插件目录 'skins/global' (如果存在) - 数据库目录 'data' (如果存在) - 文件: mg2_settings.php (如果) - 文件: mg2db_fdatabase.php - 文件: mg2db_idatabase.php - 文件: mg2_log.txt - 文件: database.txt (如果存在)
 
-　　4) 使用FTP上传kh_mod_04_b4.zip压缩包中的所有文件至服务器上相册目录
+　　4) 使用FTP上传kh_mod.zip压缩包中的所有文件至服务器上相册目录
 
-　　5) 然后在浏览器地址栏中输入:http://www.yourdomain.com/gallery/mg2_update.php，升级至kh_mod 0.4.0 b4
+　　5) 然后在浏览器地址栏中输入:http://www.yourdomain.com/gallery/mg2_update.php，升级至kh_mod最新版
 
-　　6) 最后，你可以从http://www.tangata.de/kh_mod/files/final04/kh_mod_04_b4_skins.zip，安装更多皮肤
+　　6) 最后，你可以从http://www.tangata.de/kh_mod/获取更多皮肤，存在版本兼容问题
 
-   皮肤支持MG2 0.5.1或者kh_mod < 0.4.0 b4，但不兼容kh_mod 0.4.0 b4!
-
-　　7) 现在, 开始体验kh_mod 0.4.0 b4新功能
+　　7) Enjoy with kh_mod
 
 
-= MySQL支持 (可选) =
+----------------------------------------------------------------------------------
 
-　　MySQL仍处于试验阶段. 为了使用MySQL，根据MySQL服务器配置'mg2admin_sqlstart.php'. 
+==MySQL支持 (可选)==
 
-　　然后,你必须在菜单'选项 | 数据库'的'切换数据库'选择MySQL. 
+　　为了使用MySQL，根据MySQL服务器配置'mg2admin_sqlstart.php'.
+
+　　然后,你必须在菜单'选项 | 数据库'的'切换数据库'选择MySQL.
 
 　　如果提示'成功切换至MySQL',在你的MySQL数据库里会创建一些新的包含相应数据记录的数据表:
 
-- mg2db_folders
-- mg2db_items
-- mg2db_splashes
-- mg2db_keywords
-- mg2db_item_keyword
-- mg2db_counter
+- mg2db_folders 
+
+- mg2db_items 
+
+- mg2db_splashes 
+
+- mg2db_keywords 
+
+- mg2db_item_keyword -
+
+ mg2db_counter 
+
 - mg2db_settings
 
-　　* 注意: 同一个数据库只能安装一个相册!
+　　 *注意: 同一个数据库只能安装一个相册!*
