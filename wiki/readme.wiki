@@ -3,7 +3,7 @@
 
 　　1) 使用一个FTP程序(例如WS_FTP Lite)在你的Web服务器上创建一个新的目录, 例如: http://www.yourdomain.com/gallery
 
-　　2) 上传kh_mod_04_b4.zip压缩包中的所有文件(包括子文件) 至你的Web服务器上新创建的目录.
+　　2) 上传kh_mod_041.zip压缩包中的所有文件(包括子文件) 至你的Web服务器上新创建的目录.
 
 　　3) 使用FTP设置'data'文件夹和'pictures'文件夹的权限为777.
 
