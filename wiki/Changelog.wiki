@@ -1,5 +1,5 @@
 #labels Featured,Phase-Requirements
-=kh_mod 0.4.1, 12.12.2012=
+=kh_mod 0.4.2, 10.20.2013=
 
   *  修复: 一些关于sql(MySQL) "传统" 模式的问题
   *  MySQL接口MySQLi支持PHP 5.4及以上。如果在用一个低版本的PHP，新版本的接口一样可以使用
